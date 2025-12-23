@@ -32,26 +32,26 @@ A custom useDebounce hook is used to debounce search input, reducing unnecessary
 ---
 
 ## 3. Component Structure
-src/
-├─ App.tsx # Main container component
-│
-├─ components/
-│ ├─ ProductList.tsx # Renders filtered products
-│ ├─ ProductCard.tsx # Product item & quantity control
-│ ├─ CartSummary.tsx # Selected items & total price
-│ └─ SearchFilter.tsx # Search input & category filter
-│
-├─ hooks/
-│ └─ useDebounce.ts # Reusable debounce hook
-│
-├─ data/
-│ └─ products.ts # Mock product data
-│
-├─ types/
-│ └─ product.ts # Centralized TypeScript types
-│
-└─ utils/
-└─ common.ts # Shared helpers & validations
+- **App.tsx**
+  - Main container component handling global state and business logic
+
+- **components/**
+  - `ProductList.tsx`: renders filtered product list
+  - `ProductCard.tsx`: displays product info & quantity control
+  - `CartSummary.tsx`: shows selected items and total price
+  - `SearchFilter.tsx`: search input and category filter
+
+- **hooks/**
+  - `useDebounce.ts`: reusable debounce hook for search input
+
+- **data/**
+  - `products.ts`: mock product data
+
+- **types/**
+  - `product.ts`: centralized TypeScript definitions
+
+- **utils/**
+  - `common.ts`: shared helpers and validation logic
 
 ## 4. Responsive Design Decisions
 The UI is built with mobile-first principles using Tailwind CSS.
